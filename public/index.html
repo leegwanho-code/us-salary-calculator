@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── SEO ──────────────────────────────────────────────────── -->
+  <title>US Salary Calculator 2024 — Free Take-Home Pay Estimator</title>
+  <meta name="description" content="Calculate your exact 2024 US take-home pay after federal & state taxes, Social Security, Medicare, and pre-tax deductions (401k, IRA, HSA). Free, instant, no sign-up." />
+  <meta name="keywords" content="US salary calculator, take-home pay calculator, 2024 tax calculator, net pay calculator, paycheck calculator, 401k calculator" />
+  <meta name="author" content="US Salary Calculator" />
+  <link rel="canonical" href="https://ussalarycalculator.com/" />
+
+  <!-- ── Open Graph ────────────────────────────────────────────── -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://ussalarycalculator.com/" />
+  <meta property="og:title"       content="US Salary Calculator 2024 — Free Take-Home Pay Estimator" />
+  <meta property="og:description" content="Calculate your exact 2024 US take-home pay after federal & state taxes, Social Security, Medicare, and pre-tax deductions (401k, IRA, HSA)." />
+  <meta property="og:image"       content="https://ussalarycalculator.com/og-image.png" />
+
+  <!-- ── Twitter Card ─────────────────────────────────────────── -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="US Salary Calculator 2024 — Free Take-Home Pay" />
+  <meta name="twitter:description" content="Free 2024 US paycheck calculator. Federal + state tax, FICA, 401k, HSA & more." />
+
+  <!-- ── Structured Data ──────────────────────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "US Salary Calculator 2024",
+    "url": "https://ussalarycalculator.com/",
+    "description": "Free US take-home pay calculator with 2024 federal and state tax brackets, FICA, and pre-tax deductions.",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+
+  <!-- ── Favicon ───────────────────────────────────────────────── -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💵</text></svg>" />
+
+  <!-- ── Styles ────────────────────────────────────────────────── -->
+  <link rel="stylesheet" href="/public/style.css" />
+
+  <!-- ── AdSense ──────────────────────────────────────────────── -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=__ADSENSE_CLIENT__" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- ── Header ───────────────────────────────────────────────── -->
+  <header class="site-header" role="banner">
+    <div class="badge">🇺🇸 2024 Tax Year</div>
+    <h1>US <span class="gradient-text">Take-Home Pay</span> Calculator</h1>
+    <p>
+      See exactly how much you keep after federal &amp; state taxes,
+      Social Security, Medicare, and pre-tax deductions.
+      <strong>Free, instant, no sign-up.</strong>
+    </p>
+  </header>
+
+  <main class="app-wrapper" id="main-content" role="main">
+
+    <!-- ── Top Ad Banner ────────────────────────────────────────── -->
+    <div class="ad-banner" aria-label="Advertisement">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="__ADSENSE_CLIENT__"
+           data-ad-slot="__ADSENSE_SLOT_TOP__"
+           data-ad-format="auto"
+           data-full-width-responsive="true">
+      </ins>
+    </div>
+
+    <!-- ── Main Grid ─────────────────────────────────────────────── -->
+    <div class="main-grid">
+
+      <!-- Left: Form -->
+      <aside aria-label="Salary input">
+        <div id="form-container"></div>
+      </aside>
+
+      <!-- Right: Results -->
+      <div class="results-column" id="results-column" aria-live="polite" aria-label="Calculation results">
+        <!-- Populated by app.js -->
+      </div>
+
+    </div>
+
+    <!-- ── FAQ / Info Section ────────────────────────────────────── -->
+    <section class="card" style="margin-top: var(--space-2xl);" aria-label="Frequently asked questions">
+      <div class="card-header">
+        <div class="card-icon blue">❓</div>
+        <h2>How Is Take-Home Pay Calculated?</h2>
+      </div>
+      <div style="display:grid; gap: var(--space-lg); color: var(--color-text-secondary); font-size:0.9rem; line-height:1.7;">
+
+        <div>
+          <h3 style="color:var(--color-text-primary); margin-bottom: var(--space-xs); font-size:0.95rem;">📋 Step 1 — Gross to AGI</h3>
+          <p>Pre-tax contributions (401k, IRA, HSA, FSA, health insurance) are subtracted from gross pay to determine your <strong>Adjusted Gross Income (AGI)</strong>.</p>
+        </div>
+
+        <div>
+          <h3 style="color:var(--color-text-primary); margin-bottom: var(--space-xs); font-size:0.95rem;">🏛️ Step 2 — Federal Income Tax</h3>
+          <p>The 2024 standard deduction is applied to AGI ($14,600 Single / $29,200 MFJ / $21,900 HOH), then federal tax is calculated using <strong>progressive brackets up to 37%</strong>.</p>
+        </div>
+
+        <div>
+          <h3 style="color:var(--color-text-primary); margin-bottom: var(--space-xs); font-size:0.95rem;">🗺️ Step 3 — State Income Tax</h3>
+          <p>9 states have no income tax (TX, FL, NV, WA, etc.). Others use flat rates or progressive brackets. This calculator covers all 50 states + D.C.</p>
+        </div>
+
+        <div>
+          <h3 style="color:var(--color-text-primary); margin-bottom: var(--space-xs); font-size:0.95rem;">🏥 Step 4 — FICA Taxes</h3>
+          <p><strong>Social Security:</strong> 6.2% on wages up to $168,600 (2024 wage base).<br>
+             <strong>Medicare:</strong> 1.45% on all wages + 0.9% additional on wages over $200k (Single) or $250k (MFJ).</p>
+        </div>
+
+        <div style="background: rgba(99,179,237,0.06); border-radius: var(--radius-md); padding: var(--space-md);">
+          <strong style="color:var(--color-text-primary);">⚠️ Disclaimer:</strong>
+          This calculator provides estimates for informational purposes only and does not constitute tax advice.
+          Actual withholding depends on W-4 elections, local taxes, and other factors.
+          Consult a tax professional for personalized guidance.
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ───────────────────────────────────────────────── -->
+  <footer class="site-footer" role="contentinfo">
+    <p>
+      <strong>US Salary Calculator</strong> — 2024 Tax Year Data<br />
+      Sources: <a href="https://www.irs.gov" target="_blank" rel="noopener noreferrer">IRS.gov</a> ·
+               <a href="https://www.ssa.gov" target="_blank" rel="noopener noreferrer">SSA.gov</a> ·
+               State Revenue Departments
+    </p>
+    <p style="margin-top: var(--space-sm);">
+      Tax data is for informational purposes only. Not financial or tax advice.
+    </p>
+  </footer>
+
+  <!-- ── App Script ────────────────────────────────────────────── -->
+  <script type="module" src="/src/app.js"></script>
+
+  <!-- ── AdSense Init ──────────────────────────────────────────── -->
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+</body>
+</html>

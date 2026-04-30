@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm test)",
+      "Bash(npm run test:watch)",
+      "Bash(npm run test:coverage)",
+      "Bash(npm run lint)",
+      "Bash(npm run dev)",
+      "Bash(npx lighthouse*)",
+      "Read(**)",
+      "Write(src/**)",
+      "Write(tests/**)",
+      "Write(public/**)",
+      "Write(tasks/**)"
+    ],
+    "deny": [
+      "Bash(rm -rf /)",
+      "Bash(curl * | bash)",
+      "Bash(npm publish)",
+      "Bash(npm install *)",
+      "Write(.env*)",
+      "Write(vercel.json)",
+      "Write(package.json)",
+      "Write(.claude/settings.json)",
+      "Write(src/data/**)"
+    ]
+  }
+}
