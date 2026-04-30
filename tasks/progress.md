@@ -45,9 +45,9 @@
 - [x] sitemap.xml
 - [x] robots.txt
 - [x] vercel.json (rewrites 추가, CSP에 Google Fonts 허용)
-- [ ] AdSense 클라이언트 ID 삽입 (승인 후 __ADSENSE_CLIENT__ 대체)
+- [x] AdSense 클라이언트 ID 삽입 (ca-pub-6744073304383561)
 - [ ] Lighthouse Performance >= 90 (배포 후 확인)
-- [ ] Vercel 배포 (도메인 확정 후)
+- [x] Vercel 배포 (도메인 확정 후)
 
 ---
 
