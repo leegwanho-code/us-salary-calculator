@@ -105,7 +105,7 @@ function createAdSlot() {
   div.innerHTML = `
     <ins class="adsbygoogle"
          style="display:block"
-         data-ad-client="__ADSENSE_CLIENT__"
+         data-ad-client="ca-pub-6744073304383561"
          data-ad-slot="__ADSENSE_SLOT_INLINE__"
          data-ad-format="auto"
          data-full-width-responsive="true">
